@@ -1,0 +1,150 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+ background: #c3a2a2;
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ right: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+     justify-content: right;   
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+  color: white ;
+  text-decoration: none;
+  justify-content: right;
+}
+
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/web.jpg");
+  background-size: cover;
+  background-position:top center;
+  margin-top: 38px;
+  min-height: 100vh;  
+}
+
+h1 {
+  color: #f2b5b5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 60px;
+}
+
+#welcome-section:nth-child(2){
+  color: #584b4c;
+  font-size: 30px;
+}
+
+#projects {
+  background: #bcacb4;
+  text-align: center;
+  margin-top: 0px;
+  padding-bottom: 30px;  
+}
+
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 60px; 
+}
+
+
+.project-tile img {
+  width: 100%;
+}
+
+
+.project-tile div {
+   background-color: #c3a2a2;
+   padding: 5px;
+}
+
+.project-tile p {
+  color: black;
+}
+
+.more {
+  background-color: #c3a2a2;
+  padding: 5px;
+  width:80px;
+  margin: auto;
+  margin-bottom: 10px; 
+}
+
+.more :hover {
+  background-color: #59263c;
+}
+
+.more a {
+  text-decoration: none;
+  color: black;
+}
+
+#profile-link {
+  text-decoration: none;
+}
+
+.contact {
+  min-height: 40vh;
+  background-color: #59263c;
+  color: white;
+  width: 100%;
+}
+
+.contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-decoration: none;
+  list-style: none; 
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;    
+}
+
+.contact h2 {
+  padding: 50px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #c3a2a2 ;
+  text-align: right;
+  padding: 10px;  
+}
+
+
+
+@media (max-width: 400px) {
+  .mini-grid {
+      grid-template-columns: 1fr;
+  }
+}
